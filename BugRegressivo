@@ -1,0 +1,15 @@
+1.	Condizione iniziale:
+GooglePay ed ApplePay hanno avuto maggiore utilizzo nell’ultimo periodo su tutti gli e-commerce. In futuro sarà necessario aggiungerli.
+
+2.	Modifica:
+Aggiunta di ApplePay e GooglePay.
+
+3.	Bug non all’interno della modifica:
+Il sistema non è in grado di ricevere transazioni da nessun altro metodo di pagamento, poiché i due payment gateway sono in conflitto.
+
+4.	Impatto del bug:
+Il nuovo payment gateway va a sovrascrivere il comportamento del precedente e i clienti che non hanno ApplePay e GooglePay non potrebbe più acquistare dal sito.
+
+5.	Quanto il bug è legato alla specifica modifica:
+Il sistema ha bisogno di un nuovo ed unico payment gateway per far sì che non si crei conflitto. 
+Vi è necessità di migrare tutti i metodi di pagamento in un unico servizio.
